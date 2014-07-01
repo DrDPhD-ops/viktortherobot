@@ -8,6 +8,10 @@ rownames(olympics) <- as.character(olympics$Country)
 olympics <- olympics[,2:ncol(olympics)]
 olympics <- as.data.frame(olympics)
 
+
+# Density plot
+plot(density(test,na.rm=TRUE, data=dataName, legend=T, xlab="xLabel", ylab="yLabel", main="main label here")
+
 #olympics$Reward2GDP <- olympics$Reward/(olympics$GDP*1000000000)
 #olympics$Athlets2Pop <- olympics$Athletes/(olympics$Population)
 
